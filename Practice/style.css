@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+nav ul{
+    height: 40px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+nav li{
+    text-decoration: none;
+}
+nav a{
+
+    text-decoration: none;
+       padding: 10px;
+       color: black;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li a:hover{
+    background-color: lightgray;
+}
+ul{
+    list-style: none;
+}
+
+
+
+.hero{
+    height: 30vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url(https://picsum.photos/300/100);
+}
+
+.portfolio{
+    height: 800px;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    height: 300px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client{
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
