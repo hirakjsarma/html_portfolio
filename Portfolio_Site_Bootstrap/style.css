@@ -79,24 +79,27 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    padding: 10px 10%;
+    padding: 1px 5%;
+    font-size: 18px;
 }
 
 nav ul li{
     list-style: none;
     text-decoration:none;
-    padding: 20px;
+    
     display: inline-block;
 }
 
 nav ul li a{
     text-decoration: none;
+    margin: 5px;
+    flex-wrap: wrap;
 
 }
 
 .hero{
     background-color: bisque;
-    height: 50vh;
+    height: 20vh;
     
 }
 
@@ -112,6 +115,7 @@ nav{
 }
 
 .logo{ 
-    width: 300px;
+    width: 200px;
     height: 75;
 }
+
