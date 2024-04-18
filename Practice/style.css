@@ -100,10 +100,64 @@ span{
 .client{
     height: 200px;
     /* background-color: aquamarine; */
+    margin: 5% 10%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.client h2{
+    color: lightslategrey;
+}
+
+.client h2:hover{
+    color: lightcoral;
+    transition: all .3s ease-in-out;
+    /* transform: scale(1.1); */
+    user-select: none;
+}
+
+.client ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
 }
+.clientLogo{
+     
+    
+}
+
+
+
+.clientLogo img{
+    height: 50px;
+    width: auto;
+    filter: grayscale();
+
+}
+
+.clientLogo img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    filter: saturate(100%);
+    
+}
+.white{
+    height: 100px;
+    width: auto;
+    /* background-color: bisque; */
+}
+
+.black{
+    height: 100px;
+    width: auto;
+    /* background-color: lightseagreen; */
+}
+
 .hero a{
     text-decoration: none;
     color: lightslategray;
@@ -152,3 +206,4 @@ span{
   box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
   color: lightcoral;
 }
+
