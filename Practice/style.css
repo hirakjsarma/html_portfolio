@@ -20,6 +20,7 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
     margin-top: 2%;
+    margin-bottom: 2%;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -31,33 +32,54 @@ nav a{
 
     text-decoration: none;
        padding: 10px;
-       color: black;
+       color: lightslategray;
+       font-size: small;
 }
 nav li:first-child{
     margin-right: auto;
     user-select: none;
+    font-size: large;
+    color: lightslategray;
 }
 nav li a:hover{
-    background-color: lightgray;
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+    color: lightcoral;
 }
+nav li:first-child:hover{
+    margin-right: auto;
+    user-select: none;
+    font-size: large;
+    color: lightcoral;
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
 ul{
     list-style: none;
 }
 
-
+span{
+    color:lightcoral;
+}
 
 .hero{
-    height: 300px;
-    background-color: bisque;
+    height: 50vh;
+    /* background-color: bisque; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-image: url(./assets/Nikon\ Z8\ Embers\ of\ Desire\ \(66\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
 }
 
 .hero h1{
-    color: aliceblue;
+    color:rgb(255, 255, 255);
 }
 .portfolio{
     height: 800px;
@@ -82,10 +104,15 @@ ul{
     justify-content: center;
     align-items: center;
 }
-a{
+.hero a{
     text-decoration: none;
-    color: black;
+    color: lightslategray;
+    text-transform: uppercase;
    
+}
+
+.hero a:hover{
+    color: lightcoral;
 }
 
 
@@ -95,19 +122,19 @@ a{
 .button-hero {
   align-items: center;
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  
+  /* box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px; */
   box-sizing: border-box;
   color: #121212;
   cursor: pointer;
   display: inline-flex;
   flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
   font-weight: 700;
   justify-content: center;
   line-height: 1;
-  margin: 0;
+  margin: 3px;
   outline: none;
   padding: 1rem 1.2rem;
   text-align: center;
@@ -122,5 +149,6 @@ a{
 }
 
 .button-hero:hover {
-  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+  color: lightcoral;
 }
