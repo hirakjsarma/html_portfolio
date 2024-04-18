@@ -11,6 +11,7 @@ body{
     font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+
 }
 nav ul{
     height: 40px;
@@ -34,6 +35,7 @@ nav a{
 }
 nav li:first-child{
     margin-right: auto;
+    user-select: none;
 }
 nav li a:hover{
     background-color: lightgray;
@@ -45,15 +47,18 @@ ul{
 
 
 .hero{
-    height: 30vh;
+    height: 300px;
     background-color: bisque;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-image: url(https://picsum.photos/300/100);
 }
 
+.hero h1{
+    color: aliceblue;
+}
 .portfolio{
     height: 800px;
     background-color: lightpink;
@@ -72,8 +77,50 @@ ul{
 
 .client{
     height: 200px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+
+
+.herobtn{
+    gap: 200px;
+}
+.button-hero {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.button-hero:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
